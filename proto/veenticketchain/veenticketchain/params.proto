@@ -1,0 +1,15 @@
+syntax = "proto3";
+package veenticketchain.veenticketchain;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "veenticketchain/x/veenticketchain/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "veenticketchain/x/veenticketchain/Params";
+  option (gogoproto.equal) = true;
+
+  
+}
